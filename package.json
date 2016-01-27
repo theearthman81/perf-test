@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Measure performance of web page.",
   "main": "index.js",
+  "bin": {
+    "perf": "./index.js"
+  },
   "scripts": {
     "start": "babel-node --presets es2015 lib/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.1.5",
     "minimist": "^1.2.0",
     "webdriverio": "^3.4.0"
   },
